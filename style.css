@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 860px;
+    min-height: 520px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+}
+
+.left-panel {
+    flex: 1.1;
+    background-color: #001689;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 40px;
+    position: relative;
+}
+
+.panel-content h1:first-child {
+    font-size: 2.8rem;
+    margin-bottom: 16px;
+    line-height: 1;
+    opacity: 0.6;
+}
+
+.panel-content h1:last-of-type {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.panel-content p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    opacity: 0.8;
+}
+
+.footer {
+    margin-top: auto;
+    padding-top: 40px;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.form-panel {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.dev-logo {
+    color: #001689;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 36px;
+    letter-spacing: 1px;
+}
+
+.header-section h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.signup-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 28px;
+    line-height: 1.5;
+}
+
+.signup-text a {
+    color: #001689;
+    font-weight: 650;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 22, 137, 0.3);
+}
+
+.signup-text a:hover {
+    border-bottom-color: #001689;
+}
+
+.signup-text span {
+    display: block;
+}
+
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 650;
+    margin-bottom: 5px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    background: #fafafa;
+}
+
+.input-field input:focus {
+    border-color: #001689;
+    background: #fff;
+}
+
+.options-row {
+    margin-bottom: 22px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #444;
+    cursor: pointer;
+}
+
+.remember-me input {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    accent-color: #001689;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #001689;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.15s;
+}
+
+.login-btn:hover {
+    background-color: #0020b5;
+    transform: translateY(-.5px);
+}
+
+.login-btn:active {
+    transform: translateY(0);
+}
+
+.forgot-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.forgot-link a {
+    color: #001689;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .left-panel {
+        display: none;
+    }
+}
